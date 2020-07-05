@@ -53,14 +53,36 @@ body {
     }
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
-  " nav . nav"
+  "header header header"
   ". searchbar ."
-  "footer . footer";
+  "footer footer footer";
+  align-content: space-between;
+  /* forces css grid container to fill full screen of device*/
+  width: 100vw;
+  height: 100vh;
 }
+.item-a {
+   grid-area: header;
+}
+.item-b {
+  grid-area: searchbar;
+  justify-self: center;
+  }
 
-
-
-
+.item-c {
+  grid-area: footer;
+  align-self: end;
+}
+#navigation li{
+    display: inline;
+     }
+#footer{
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+#footer li {
+  display: inline;
+}
