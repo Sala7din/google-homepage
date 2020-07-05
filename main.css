@@ -55,10 +55,12 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  " nav . nav"
+  ". searchbar ."
+  "footer . footer";
 }
-.item-1 {
-  
-}
+
 
 
 
