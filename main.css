@@ -52,6 +52,7 @@ body {
   background-color: white;
     }
 .container {
+  font-family: arial,sans-serif;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -75,8 +76,18 @@ body {
   grid-area: footer;
   align-self: end;
 }
+li {
+
+}
+nav {
+  padding: 23px;
+}
 nav li  {
   display: inline;
+  font-size: 13px;
+  padding-left: 8px;
+  color: #000;
+  opacity: 0.75;
 }
 nav ul {
   display: inline-block;
@@ -88,10 +99,17 @@ nav ul {
 footer{
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
+  padding: 12px;
+  
+  
 }
+
 footer li  {
   display: inline;
-}
+  color: #5f6368;
+  font-size: 14px;
+  padding-left: 27px;
+  }
 footer ul {
   display: inline-block;
 }     
