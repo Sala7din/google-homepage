@@ -56,33 +56,45 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: 
-  "header header header"
-  ". searchbar ."
-  "footer footer footer";
-  align-content: space-between;
+    "header header header"
+    ". searchbar ."
+    "footer footer footer";
+  
   /* forces css grid container to fill full screen of device*/
   width: 100vw;
   height: 100vh;
 }
-.item-a {
-   grid-area: header;
-}
-.item-b {
-  grid-area: searchbar;
-  justify-self: center;
-  }
 
-.item-c {
+.item-1 {
+  grid-area: header;
+}
+.item-2 {
+  grid-area: searchbar;
+}
+.item-3 {
   grid-area: footer;
   align-self: end;
 }
-#navigation li{
-    display: inline;
-     }
-#footer{
+nav li  {
+  display: inline;
+}
+nav ul {
+  display: inline-block;
+  
+}  
+#nav2  {
+  float: right;
+}   
+footer{
   border: 1px solid #e7e7e7;
   background-color: #f3f3f3;
 }
-#footer li {
+footer li  {
   display: inline;
+}
+footer ul {
+  display: inline-block;
+}     
+#footer2 {
+  float: right;
 }
